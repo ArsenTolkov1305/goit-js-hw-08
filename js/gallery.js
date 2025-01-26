@@ -45,8 +45,6 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
-
-// Створення розмітки галереї
 const gallery = document.querySelector('.gallery');
 const galleryMarkup = images
   .map(
@@ -64,8 +62,6 @@ const galleryMarkup = images
   )
   .join('');
 gallery.innerHTML = galleryMarkup;
-
-// Делегування подій для відкриття модального вікна
 gallery.addEventListener('click', event => {
   event.preventDefault();
 
